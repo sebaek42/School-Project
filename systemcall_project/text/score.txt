@@ -1,0 +1,13 @@
+-------------- SCORE --------------- 
+USER : JONGHYUN, SCORE : 120
+
+USER : BEENZINO, SCORE : 100
+
+USER : 백승호, SCORE : 250
+
+USER : 테스트1, SCORE : 200
+
+USER : 1, SCORE : 0
+
+USER : d, SCORE : 0
+
