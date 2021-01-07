@@ -1,0 +1,66 @@
+A review of research on tourism demand forecasting: Launching the Annals of Tourism Research Curated Collection on tourism demand forecasting 
+Haiyan Song, Richard T.R. Qiu, Jinah Park, 2019
+
+- 211개의 관광 산업 수요 예측 연구 리뷰 논문에 기반한 관광 산업 수요 예측 동향 분석 - 
+
+관광 산업 수요 예측 기법은 크게 시계열 모델(Time series Model), 계량 경제 모델 (Econometric model), AI 모델 3 가지로 나눌 수 있다.
+
+Time series
+
+시계열 모델은 시간 변수에 종속적인 변수가 변화하는 패턴을 이해하여 예측하는 모델이다. 기본적인 시계열 모델으로 자기회귀모델(Autoregressive: AR)과
+이동평균모델(Moving Average: MA)이 존재하며 두 모델을 모두 적용한 자기회귀이동평균모델(ARMA)도 수요예측에서 널리 쓰인다. 논문에 따르면 ARMA 모델은
+자기회귀누적이동평균(ARIMA)과 계절성 ARMIMA(SARIMA)와 같이 다양하게 변형되어 사용되며, 211개 연구 중 시계열 분석 기법을 사용한 연구가 118개이고
+이 중 60% 이상이 ARIMA-type Model을 사용하였다. 그리고 관광의 본질적 특성으로 인하여 많은 연구에서 SARIMA나 Holt-Winters Model과 같이 계절성이 반영되는 
+기법들이 많이 사용되었고 정확도도 계절성이 미반영된 기법에 비하여 우수한 것으로 나타났다(Lim, C., & McAleer, M. (2001c). Monthly seasonal variations: Asian tourism to Australia. Annals of Tourism Research, 28(1), 68–82.).
+
+
+
+ Econometric
+시계열 모델이 과거의 데이터를 기반으로 수요를 예측하는 반면 계량경제모델은 인과관계 구조를 설정하거나 다양한
+독립 변수가 미래 수요에 얼마나 유의하게 영향을 미치는지에 대해 초점을 맞춘다. 계량경제 예측 모델은 잠재적인 인과
+관계를 설명하는 것에서 시작하여 유효한 변수들 중 결함이 있는 변수를 구분하는 과정을 수행한다.
+가장 기본적인 모델은 단순회귀분석모델(Single static regression: SR)이 존재한다. 1990년대 연구에서 SR은 특정 변수가
+현재의 값에 미치는 영향력을 확인하기 위해 사용되었지만, 최근에는 관광 수요 예측 기법을 평가하는데 주로
+사용된다(Athanasopoulos, G., Hyndman, R. J., Song, H., & Wu, D. C. (2011). The tourism forecasting competition.).
+
+관광 산업의 수요와 다양한 경제적 요인들의 관계를 설명하기 위해서 사용되는 현대의 계량 경제 기법으로는 Distributed Lag(DL)과
+Autoregressive Distriuted lag model(ADLM) 그리고 Error Correction model(ECM)이 존재한다. DL은 현재의 값에 대해서 과거의
+요소들 까지 고려한다는 장점을 가지고 있으나 여러 한계점으로 인해 최근 연구에서는 ADLM을 선호하며 DL은 수요 예측 평가에
+주로 사용된다(Hu, Y. C., Jiang, P., & Lee, P. C. (2018). Forecasting tourism demand by incorporating neural networks into Grey–Markov models).
+계량경제 모델에서 주로 사용되는 기법은 ADLM과 ECM 기법이며 논문에서 조사한 211개의 연구중 111개 연구가 계량경제모델을 사용했고
+그 중 ADLM 기법을 사용한 연구가 26개 ECM 기법을 사용한 연구가 24개였다. 그리고 최근 정적 단일 방정식을 사용하는 ADLM, ECM과 달리
+시계열 모델인 ARIMA, SARIMA에 외생 변수를 포함한 ARIMAX, SARIMAX 기법을 사용한 연구들도 나타나고 있다. ADLM과 ECM은 관광 산업 수요와
+요인들간 인과관계를 강조한 반면 ARIMAX, SARIMAX는 관광 수요의 역동성을 파악하는 데 초점을 맞추고 있다.
+
+홍콩의 공항 수요 예측 연구(Tsui, W. H. K., Balli, H. O., Gilbey, A., & Gow, H. (2014). Forecasting of Hong Kong airport's passenger throughput.)에서는
+장기 예측에 있어서 ARIMAX 모델이 SARIMA 모델 보다 더 높은 정확도를 보였다. 그리고 일본의 한국 관광 수요 예측 연구(Park, S., Lee, J., & Song, W. (2017). Short-term forecasting of Japanese tourist inflow to South Korea using Google trends data.)
+에서는 SARIMAX 모델이 SARIMA나 Holt-Winters 모델과 같은 일반적인 시계열 모델보다 높은 정확도를 보였다.
+
+마지막으로 시계열 모델인 BSM에서 외생 변수를 추가한 구조 시계열 모델(Structural Time Series Model: STSM)을 사용한 연구도 찾아볼 수 있다. 
+STSM은 추세와 계절 및 주기 구성요소를 강조하여 외생 변수의 영향을 파악할 수 있다. 
+
+
+
+AI 모델
+
+가장 널리쓰이는 AI 모델중 하나는 인공신경망모델(Artificial Neural Network: ANN)이다. ANN 모델은 불완전한 데이터를 처리하거나
+거의 모든 종류의 비선형성을 처리할 수 있는 강력한 실행성과 유연성을 가지고 있는 것으로 입증되었다. 이러한 점 때문에 
+다양한 수요 예측 연구에 ANN 모델이 사용되며 실제로 전통적인 선형 및 비선형 기법들 보다 비교적 더 정확한 수요 예측을 하였다.
+하지만 ANN 모델이 이론적 배경이 부족하고 입력과 출력 사이의 숨겨진 층인 'black box'로 인하여 많은 비판을 받고 있다. 이로 인해
+ANN 모델 이외 AI 기법인 Support Vector regression(SVR) Fuzzy time series, Rough Sets Approach, Grey Theory 등 다양한 기법들이
+관광 산업 수요 예측에 사용 되고 있다. 
+최근 연구에서는 전처리된 데이터에 한해서 기존의 시계열 모델이 ANN 모델보다 우수하다는 결과 발표된 바 있다.(Cang, S., & Yu, H. (2014). A combination selection algorithm on forecasting).
+이에 따라 ANN 모델을 단독으로 사용하기 보다는 기존의 시계열 모델과 혼합한 Combining ANN 모델이 관광 산업 수요 예측에서 각광받고있다. Nor, Nurul, Rusiman은 2018년 논문에서 Box-Jenkins와 ANN 모델을
+혼합만 모델을 제시하였고(Nor, M. E., Nurul, A. I., & Rusiman, M. S. (2018). A hybrid approach on tourism demand forecasting.), Chen은 선형 모델(ARIMA)과 비선형 AI 모델(SVR)을 혼합한 모델을 제시하였다(Chen, K. Y. (2011). Combining linear and nonlinear model in forecasting tourism demand.).
+SVR도 관광 산업 수요 예측 연구에서 자주 사용된다. SVR은 SVM(Support Vector Machine)의 매개변수 선택을 위한 유전자 알고리즘(GA)과 함께 사용하기 위해 제안되었고 GA-SVR이라는 Hybrid 모델이 만들어졌다.
+그리고 Google Trends, Google Analytics, Baidu Index가 제공하는 데이터를 바탕으로 관광 수요 예측 연구를 수행한 경우도 존재한다(Li, S., Chen, T., Wang, L., & Ming, C. (2018). Effective tourist volume forecasting supported by PCA and improved BPNN using Baidu index).
+하지만 이러한 데이터 중심 예측 기법을 도메인에 적용될 때 분석 결과에 대한 해석이 주관적일 수 있다. 따라서 데이터 중심의 기법의 경우 아직까지 기술적 한계를 내재하고 있지만 관광 수요 예측의 정확도를 비약적으로
+높일 수 있기때문에 계속해서 관련 연구가 진행중이다.
+
+Combination Model
+
+논문에 따르면 2000년대 후반부터 Combinatioin 혹은 Hybrid 모델을 적용한 관광 수요 예측이 활발하게 진행되었다. Combination 모델이 적용된
+24개의 연구중 21개에서 Combination 모델이 기존의 수요 예측 모델 보다 더 나은 결과를 보였다. Combination 모델을 구성하는 방법으로는 average-based methods, forecast
+error-based weightings, regression-based integrations이 사용되었다. average-based 기법은 피타고라스 평균(산술, 기하, 조화)을 의미하며 적용하기 쉬운 모델에 해당한다.
+forecast error-based weightings은 더 나은 정확도를 보인 모델에 더 많은 가중치를 부여하는 기법이다. Regression-based 기법은 하나의 수요 예측 기법을 하나의 변수로 입력하고
+선형 혹은 비선형 회귀 분석을 수행하는 것이다. 
